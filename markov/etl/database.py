@@ -8,5 +8,6 @@ def event_to_database(event: Event) -> DBEvent:
         second=event.match_time.match_second,
         event_type=event.event_type,
         x=event.location.x,
-        y=event.location.y
+        y=event.location.y,
+        team_id=event.team.team_id
     )

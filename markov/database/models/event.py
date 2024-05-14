@@ -13,3 +13,4 @@ class Event(Base):
     event_type: Mapped[int] = mapped_column(nullable=False)
     x: Mapped[float] = mapped_column(nullable=False)
     y: Mapped[float] = mapped_column(nullable=False)
+    team_id: Mapped[int] = mapped_column(nullable=False)
