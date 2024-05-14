@@ -1,7 +1,9 @@
+# pyright: reportUnusedImport=false
 from sqlalchemy import create_engine, Engine
 from dotenv import dotenv_values
 
 from markov.database.models import Base
+from markov.database.models.event import Event
 
 
 def get_engine() -> Engine:
